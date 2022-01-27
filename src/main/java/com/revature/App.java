@@ -12,7 +12,7 @@ public class App {
         app.get("/hello", ((ctx) -> {
             String url = ctx.url();
             System.out.println(url);
-            ctx.html("<h1> Hello Jenkins </h1>");
+            ctx.html("<h1> Hello Jenkins on EC2</h1>");
             ctx.status(200);
         })); //ctx represents the context of the request/response for the Handler
 
